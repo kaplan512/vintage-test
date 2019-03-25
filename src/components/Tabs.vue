@@ -45,8 +45,8 @@
                         zip: '02066',
                         country: 'Ukraine',
                         map: {
-                            lat: '50.446102',
-                            lng: '30.548075'
+                            lat: 50.446102,
+                            lng: 30.548075
                         }
                     },
                     {
@@ -56,8 +56,8 @@
                         zip: '02066',
                         country: 'USA',
                         map: {
-                            lat: '40.706272',
-                            lng: '-74.019490'
+                            lat: 40.706272,
+                            lng: -74.019490
                         }
                     },
                     {
@@ -67,8 +67,8 @@
                         zip: '02066',
                         country: 'China',
                         map: {
-                            lat: '23.138938',
-                            lng: '113.259472'
+                            lat: 23.138938,
+                            lng: 113.259472
                         }
                     },
                     {
@@ -78,8 +78,8 @@
                         zip: '02066',
                         country: 'Spain',
                         map: {
-                            lat: '41.382367',
-                            lng: '2.173128'
+                            lat: 41.382367,
+                            lng: 2.173128
                         }
                     }
                 ]
@@ -116,6 +116,7 @@
                 color: white;
                 margin-right: 20px;
                 cursor: pointer;
+                text-transform: uppercase;
                 &.active {
                     color: #3db565;
                 }

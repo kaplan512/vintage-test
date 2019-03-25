@@ -227,31 +227,17 @@
             };
         },
 
-
-        created() {
-            this.geolocate();
-        },
-        methods: {
-            geolocate() {
-                navigator.geolocation.getCurrentPosition(position => {
-                    this.center = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-                });
-            }
-        },
         computed: {
             ...mapGetters({
                 chosenCity: 'chosenCity',
-            }),
+            })
         },
         watch: {
             chosenCity(val) {
-                this.center.lat = +this.chosenCity.map.lat
-                this.center.lng = +this.chosenCity.map.lng
-                this.markers[0].position.lat = +this.chosenCity.map.lat
-                this.markers[0].position.lng = +this.chosenCity.map.lng
+                this.center.lat = this.chosenCity.map.lat
+                this.center.lng = this.chosenCity.map.lng
+                this.markers[0].position.lat = this.chosenCity.map.lat
+                this.markers[0].position.lng = this.chosenCity.map.lng
             }
         }
     };
